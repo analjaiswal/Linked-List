@@ -48,6 +48,7 @@ int main()
 
 void insertbegin(struct Node **start)
 {
+ //If no head exists then make one.
  if (*start == NULL)
  {
   struct Node *temp;
@@ -56,9 +57,9 @@ void insertbegin(struct Node **start)
   temp->next=NULL;
   *start = temp;
  }
+ 
  else
  {
-
   printf("Enter the value of n:\n");
   struct Node *temp1;
   temp1 = *start;
